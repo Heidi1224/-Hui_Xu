@@ -1,0 +1,36 @@
+body{
+	background-color: #F2F2F2;
+	min-width: 1200px;
+	height: 100vw;
+	width: 100vh;
+	font-family: Blackoak std, sans-serif;
+	margin:0px;
+	padding: 0px;
+	position: absolute;
+	cursor: url("coin.gif"),auto;
+	-webkit-font-smoothing: antialiased;
+}
+
+h1{
+	color: #262997;
+	position: absolute;
+	font-size: 30pt;
+	margin-top: -600px
+}
+
+
+h2{
+	color: #de543e;
+	position: absolute;
+	font-size: 15pt;
+	margin-top:  -450px;
+
+}
+
+h3{
+	color: #262997;
+	position: absolute;
+	font-size: 15pt;
+	margin: 200px;
+	margin-top: -300px
+}

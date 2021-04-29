@@ -1,0 +1,253 @@
+body{
+	background-color: #F2F2F2;
+	min-width: 1200px;
+	height: 100vw;
+	width: 100vh;
+	font-family: Blackoak std, sans-serif;
+	margin:0px;
+	padding: 0px;
+	position: absolute;
+	cursor: url("images/coin.gif"),auto;
+	-webkit-font-smoothing: antialiased;
+}
+
+.div{
+	display:block;
+}
+
+.header {
+    padding-top: 9px;
+    padding-bottom: 9px;
+    border-bottom: 1px solid transparent;
+    margin-bottom: 8px;
+    overflow: hidden;
+    position: absolute;
+    z-index: 10000;
+}
+
+.header-ln {
+	background: #1b1d90;
+	background-size: 200%;
+	color:white;
+    width: 200%;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    overflow: hidden;
+    margin-top: -10px;
+}
+.header-seg-SWEET, .header-seg-SOUR, .header-seg-CANDYLAB,.header-seg-糖果机{
+    padding-right: 6px;
+}
+
+.header-hide{
+	opacity: 0;
+}
+
+.header-seg{
+	display: inline-block;
+}
+
+.a{
+	color: #000000;
+	text-decoration: none;
+	z-index: 1;
+}
+
+
+.WELCOME-ZONE h1{
+	font-size: 6.7vw;
+	width: 100vw;
+	margin:60px;
+	margin-top: 50px;
+	margin-bottom: 30px;
+	-webkit-animation: myfirst 10s;
+}
+
+@-webkit-keyframes myfirst
+{
+0%   {color: #F2F2F2;left:0px; top:0px;}
+10%  {color: black;left:0px; top:20px;}
+20%   {color: #F2F2F2;left:0px; top:0px;}
+30%  {color: black;left:0px; top:20px;}
+40%  {color: #F2F2F2;left:0px; top:40px;}
+50%  {color: black;left:0px; top:20px;}
+60%  {color: #F2F2F2;left:0px; top:40px;}
+70%  {color: black;left:0px; top:20px;}
+80%  {color: #F2F2F2;left:0px; top:40px;}
+100% {color: black;left:0px; top:60px;}
+}
+
+.WELCOME-ZONE img{
+	height: 230px;
+	width: 230px;
+	margin:-25px;
+	position: absolute;
+	margin-top: -135px;
+	z-index: -1;
+
+}
+
+.WELCOME-ZONE h2{
+	font-size: 1.9vw;
+	width: 100vw;
+	margin:70px;
+	margin-bottom: 0px;
+}
+
+#candylab img{
+	position: absolute;
+	width: 1500px;
+	height:843px;
+	margin:-30px;
+	margin-top: -730px;
+	z-index: -1;
+
+}
+
+/*.candylab:hover {
+	width: 1500px;
+	height: 843px;
+	margin:-30px;
+	margin-top: -730px;
+	background:url(candylab.gif);
+	cursor: pointer;
+}*/
+
+/*.id{
+	position: absolute;
+	width: 1500px;
+	height:843px;
+	margin:-30px;
+	margin-top: -730px;
+}*/
+
+.WELCOME-ZONE a{
+	position: relative;
+	font-color:black;
+	font-size: 1.9vw;
+	width: 100vw;
+	margin:70px;
+	margin-top:0px;
+	text-decoration:none;
+	z-index:1;
+}
+
+.WELCOME-ZONE h4{
+	font-size: 0.8vw;
+	width: 100vw;
+	margin: 70px;
+	margin-top:300px;
+	margin-bottom: 0px;
+}
+
+.WELCOME-ZONE h5{
+	font-size: 0.8vw;
+	width: 100vw;
+	margin:70px;
+	margin-top:0px;
+}
+
+.STICKERS img{
+	position: absolute;
+	width: 1280px;
+	height:720px;
+	margin:500px;
+	margin-top: -870px;
+}
+
+.STICKERS1 img{
+	width: 853px;
+	height:480px;
+	position: absolute;
+	margin:-70px;
+	margin-top: -420px;
+	z-index: -1;
+}
+
+.sticker3 img{
+	width: 1000px;
+	height:562px;
+	position: absolute;
+	margin:0px;
+	margin-top: -580px;
+	z-index: -1;
+}
+
+.sticker4 img{
+	width: 960px;
+	height:540px;
+	position: absolute;
+	margin:500px;
+	margin-top: -590px;
+	z-index: 1;
+}
+
+.sticker5 img{
+	width: 1000px;
+	height:562px;
+	position: absolute;
+	margin:200px;
+	margin-top: -750px;
+	z-index: -1;
+}
+
+.sticker6 img{
+	width: 1280px;
+	height:720px;
+	position: absolute;
+	margin:-70px;
+	margin-top: -895px;
+	z-index: -1;
+}
+
+.sticker7 img{
+	width: 1280px;
+	height:720px;
+	position: absolute;
+	margin:160px;
+	margin-top: -740px;
+	z-index: -1;
+}
+
+
+.bottom {
+    padding-top: 3px;
+    padding-bottom: 9px;
+    border-bottom: 300px solid transparent;
+	margin-bottom: 200px;
+	overflow: hidden;
+    position: absolute;
+    z-index: 10000;
+}
+
+.bottom-ln {
+	background: #1b1d90;
+	background-size: 200%;
+	color:white;
+    width: 200%;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    overflow: hidden;
+    margin-top: 700px;
+}
+.header-seg-PICK, .header-seg-ONE, .header-seg-SURPRISE,.header-seg-INSIDE{
+    padding-right: 6px;
+}
+
+
+
+/*.myCanvas {
+	top: -50px;
+	margin:70px;
+	margin-top:60px;
+}*/
+
+
+/*.img{
+	width: 100vw;
+	margin:60px;
+	margin-bottom: 30px;
+
+}*/

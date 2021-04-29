@@ -1,0 +1,238 @@
+<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<body style="width:500px; height:400px; overflow: hidden;">
+
+<script type="text/javascript">
+if (window.screen) { 
+var myw = 500; 
+var myh = 400; 
+window.moveTo(0, 0); 
+window.resizeTo(myw, myh); 
+window.onresize = function () {
+window.resizeTo(myw, myh);
+}
+}
+</script>
+</body>
+</html>
+<head>
+<!-- 	<meta charset="utf-8">
+  <title>jQuery UI 拖动（Draggable） - 光标样式</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+  <link rel="stylesheet" href="http://jqueryui.com/resources/demos/style.css">
+  <style>
+  #draggable, #draggable2, #draggable3 { 
+  	width: 100px; height: 100px; padding: 0.5em; float: left; margin: 0 10px 10px 0; }
+  </style> -->
+	<link rel="stylesheet" type="text/css" href="style1.css">
+	<script type= "text/javascript" href="candylab.js">
+
+  
+ 
+</script>
+
+
+</head>
+<body>
+
+	<!-- <div class="header">
+		<div class="header-ln">
+			<a class="header-seg header-seg-SOUR" herf="index1.html">SOUR</a>
+			<a class="header-seg header-seg-SWEET" >SWEET</a>
+			<a class="header-seg header-seg-CANDYLAB header-show" >CANDYLAB</a>
+			<a class="header-seg header-seg-糖果机" >糖果机</a>
+			<a class="header-seg header-seg-SOUR" >SOUR</a>
+			<a class="header-seg header-seg-SWEET" >SWEET</a>
+			<a class="header-seg header-seg-CANDYLAB header-show" >CANDYLAB</a>
+			<a class="header-seg header-seg-糖果机" >糖果机</a>
+			<a class="header-seg header-seg-SOUR" >SOUR</a>
+			<a class="header-seg header-seg-SWEET" >SWEET</a>
+			<a class="header-seg header-seg-CANDYLAB header-show" >CANDYLAB</a>
+			<a class="header-seg header-seg-糖果机" >糖果机</a><a class="header-seg header-seg-SOUR" >SOUR</a>
+			<a class="header-seg header-seg-SWEET" >SWEET</a>
+			<a class="header-seg header-seg-CANDYLAB header-show" >CANDYLAB</a>
+			<a class="header-seg header-seg-糖果机" >糖果机</a>
+		</div> -->
+
+	<div class="bottle">
+				<img src="bottle.png" class="bottle" alt="" id="bottle" onclick="change_pic()" style="position: absolute;width: 720px;height:720px;margin:380px;margin-top: -10px;z-index: 1;">
+<script>
+function change_pic(){
+var bottle = document.getElementById("bottle");
+var Flag=(bottle.getAttribute("src",2)=="bottle.png")
+bottle.src=Flag?"plastic.png":"bottle.png";
+}
+</script>
+
+<div id="gradian">
+		<img src="gradian.png"  class="gradian" id="gradian" style="position: absolute;width:720px;height:720px;margin:-250px;margin-top: 500px;">
+</div>
+
+
+
+<!-- 
+	<div class="background">
+	 <img src="background.png">
+	</div> -->
+
+
+
+	 	<a class ="button" href="lastpage.html" style="position: absolute;width: 480px;height:480px;margin:1050px;margin-top: 500px;z-index: 1;">
+	 	<img src="button.png" >
+	</a>
+
+
+	<div class="left" style="position: absolute;width: 720px;height:720px;margin:50px;margin-top: -10px;">
+	<img src="left.png">
+	<div class="right">
+	<img src="right.png">
+</div>
+
+
+
+<!--   <script>
+  $(function() {
+    $( "#draggable" ).draggable();
+    $( "#draggable2" ).draggable();
+    $( "#draggable3" ).draggable();
+  });
+  </script>
+ 
+<div id="draggable" class="ui-widget-content">
+  <img src="candy.png" style="position: absolute;width: 720px;height:720px;margin:-150px;margin-top: 50px; z-index: 1;"/>
+</div>
+ 
+<div id="draggable2" class="ui-widget-content">
+  <img src="candy1.png" style="position: absolute;width: 720px;height:720px;margin:-150px;margin-top: 50px; z-index: 1;"/>
+</div>
+ 
+<div id="draggable3" class="ui-widget-content">
+  <img src="tie,png" style="position: absolute;width: 480px;height:480px;margin:-500px;margin-top:-400px;z-index: 1;"/>
+</div> -->
+ 
+<!-- <div id="draggable" class="ui-widget-content">
+	<img id="candy" src="candy.png"style="position: absolute;width: 720px;height:720px;margin:-150px;margin-top: 50px; z-index: 1;" >
+ -->
+		<div id="draagable" style="position: absolute;width: 480px;height:480px;margin:-350px;margin-top: 300px; z-index: 1;" >
+		<img id="draggable" src="candy.png"/>
+		<!-- <script>
+
+    window.onload = function () {
+            var candy = document.getElementById("candy");
+            candy.onmousedown = function (event) {
+                console.log(1);
+
+                var ol = event.clientX - candy.offsetLeft;
+                // var ot = event.clientY - candy.offsetTop;
+
+                document.onmousemove = function (event) {
+                    var left = event.clientX - ol;
+                    var top = event.clientY - ot;
+                    candy.style.left = left+"px";
+                    candy.style.top = top+"px";
+                }
+                document.onmouseup = function (event) {
+                    document.onmousemove = null;
+                    document.onmouseup = null;
+                }
+            }
+        }
+    </script> -->
+</div>
+
+		<div id ="draggable2" style="position: absolute;width: 480px;height:480px;margin:-300px;margin-top: -450px;">
+		<img id="draggable2" src="candy1.png"/>
+		<script>
+    window.onload = function () {
+            var draggable2 = document.getElementById("draggable2");
+            draggable2.onmousedown = function (event) {
+                // console.log(1);
+
+                var ol = event.clientX - draggable2.offsetLeft;
+                var ot = event.clientY - draggable2.offsetTop;
+
+                document.onmousemove = function (event) {
+                    var left = event.clientX - ol;
+                    var top = event.clientY - ot;
+                    draggable2.style.left = left+"px";
+                   draggable2.style.top = top+"px";
+                }
+
+                document.onmouseup = function (event) {
+                    document.onmousemove = null;
+                    document.onmouseup = null;
+                }
+            }
+        }
+    </script>
+</div>
+
+
+		<div id="draggable3" style="position: absolute;width: 480px;height:480px;margin:-500px;margin-top:-400px;z-index: 1;">
+		<img id="draggable3" src="tie.png">
+		
+</div>
+		<div draggable="true" id="logo" style="position: absolute;width: 720px;height:720px;margin:700px;margin-top: -180px;z-index: 1;">
+		<img src="logo.png">
+		<script>
+    window.onload = function () {
+            var logo = document.getElementById("logo");
+            logo.onmousedown = function (event) {
+                // console.log(1);
+
+                var ol = event.clientX - logo.offsetLeft;
+                var ot = event.clientY - logo.offsetTop;
+
+                document.onmousemove = function (event) {
+                    var left = event.clientX - ol;
+                    var top = event.clientY - ot;
+                    logo.style.left = left+"px";
+                    logo.style.top = top+"px";
+                }
+
+                document.onmouseup = function (event) {
+                    document.onmousemove = null;
+                    document.onmouseup = null;
+                }
+            }
+        }
+    </script>
+</div>
+	
+			<div draggable="true" id="bigcandy" style="position: absolute;width: 720px;height:720px;margin:900px;margin-top: 230px;">
+			<img src="bigcandy.png">
+		</div>
+			<div draggable="true" id="smallcandy" style="position: absolute; width: 720px;height:720px;margin:800px;margin-top: 190px;" >
+			<img src="smallcandy.png">
+		</div>
+
+
+
+	 	</div>
+
+<!-- <div class="canDrog">
+	<img draggable="true" id="candy" src="candy.png" style="position: absolute;width: 720px;height:720px;margin:-150px;margin-top: 50px; z-index: 1;"></img>
+	<img draggable="true" id="many" src="candy1.png" style="position: absolute;width: 480px;height:480px;margin:-70px;margin-top: -300px;">
+	<img draggable="true" id="tie" src="tie.png" style="position: absolute;width: 480px;height:480px;margin:-500px;margin-top:-400px;z-index: 1;">
+	<img draggable="true" id="logo" src="logo.png" style="position: absolute;width: 720px;height:720px;margin:700px;margin-top: -180px;z-index: 1;">
+	<img draggable="true" id="bigcandy" src="bigcandy.png" style="position: absolute;width: 720px;height:720px;margin:900px;margin-top: 230px;">
+	<img draggable="true" id="smallcandy" src="smallcandy.png" style="position: absolute; width: 720px;height:720px;margin:800px;margin-top: 190px;">
+</div>
+<script>
+    $('.canDrog > li').bind('dragstart',function(event){
+        //firefox 必须访问用于拖拽通信的dataTransfer对象
+        event.dataTransfer.setData("Text",'1');
+    });
+    //google chrome,opera需要添加
+    $(".dataTbl").bind("dragover",'td',function(e){  
+        e.originalEvent.preventDefault();  
+    })  
+</script> -->
+
+
+		</body>
+	</html>

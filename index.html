@@ -1,0 +1,202 @@
+<!doctype html>
+<!DOCTYPE html>
+<html>
+<body style="width:500px; height:400px; overflow: hidden;">
+
+<script type="text/javascript">
+if (window.screen) { 
+var myw = 500; 
+var myh = 400; 
+window.moveTo(0, 0); 
+window.resizeTo(myw, myh); 
+window.onresize = function () {
+window.resizeTo(myw, myh);
+}
+}
+</script>
+<script>
+
+onload = function() {
+    var click_cnt = 0;
+    var $html = document.getElementsByTagName("html")[0];
+    var $body = document.getElementsByTagName("body")[0];
+    $html.onclick = function(e) {
+        var $elem = document.createElement("b");
+        $elem.style.color = "#E94F06";
+        $elem.style.zIndex = 9999;
+        $elem.style.position = "absolute";
+        $elem.style.select = "none";
+        var x = e.pageX;
+        var y = e.pageY;
+        $elem.style.left = (x - 10) + "px";
+        $elem.style.top = (y - 20) + "px";
+        clearInterval(anim);
+
+
+        switch (++click_cnt) {
+            case 2:
+                $elem.innerText = "OωO";
+                break;
+            case 4:
+                $elem.innerText = "Hello(๑•́ ∀ •̀๑)";
+                break;
+            case 6:
+                $elem.innerText = "WELCOME TO CANDYLAB";
+                break;
+            // case 8:
+            //     $elem.innerText = "(๑•̀_•́๑)";
+            //     break;
+            // case 10:
+            //     $elem.innerText = "（￣へ￣）";
+            //     break;
+            // case 12:
+            //     $elem.innerText = "(╯°口°)╯(┴—┴";
+            //     break;
+            // case 14:
+            //     $elem.innerText = "૮( ᵒ̌皿ᵒ̌ )ა";
+            //     break;
+            // case 16:
+            //     $elem.innerText = "╮(｡>口<｡)╭";
+            //     break;
+            // case 18:
+            //     $elem.innerText = "( ง ᵒ̌皿ᵒ̌)ง⁼³₌₃";
+                click_cnt = 0;
+                break;
+            // case 100:
+            // case 101:
+            // case 102:
+            // case 103:
+            // case 104:
+            // case 105:
+            //     $elem.innerText = "(ꐦ°᷄д°᷅)";
+                break;
+            default:
+                $elem.innerText = "❤";
+                break;
+        }
+        $elem.style.fontSize = Math.random() * 10 + 8 + "px";
+        var increase = 0;
+        var anim;
+        setTimeout(function() {
+            anim = setInterval(function() {
+                if (++increase == 150) {
+                    clearInterval(anim);
+                    $body.removeChild($elem);
+                }
+                $elem.style.top = y - 20 - increase + "px";
+                $elem.style.opacity = (150 - increase) / 120;
+            }, 8);
+        }, 70);
+        $body.appendChild($elem);
+    };
+};
+
+</script>
+</body>
+</html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="script.js"></script>
+</head>
+<body>
+	<div class="header">
+		<div class="header-ln">
+			<a class="header-seg header-seg-SOUR" herf="index1.html">SOUR</a>
+			<a class="header-seg header-seg-SWEET" >SWEET</a>
+			<a class="header-seg header-seg-CANDYLAB header-show" >CANDYLAB</a>
+			<a class="header-seg header-seg-糖果机" >糖果机</a>
+			<a class="header-seg header-seg-SOUR" >SOUR</a>
+			<a class="header-seg header-seg-SWEET" >SWEET</a>
+			<a class="header-seg header-seg-CANDYLAB header-show" >CANDYLAB</a>
+			<a class="header-seg header-seg-糖果机" >糖果机</a>
+			<a class="header-seg header-seg-SOUR" >SOUR</a>
+			<a class="header-seg header-seg-SWEET" >SWEET</a>
+			<a class="header-seg header-seg-CANDYLAB header-show" >CANDYLAB</a>
+			<a class="header-seg header-seg-糖果机" >糖果机</a><a class="header-seg header-seg-SOUR" >SOUR</a>
+			<a class="header-seg header-seg-SWEET" >SWEET</a>
+			<a class="header-seg header-seg-CANDYLAB header-show" >CANDYLAB</a>
+			<a class="header-seg header-seg-糖果机" >糖果机</a>
+		</div>
+
+		<div class="WELCOME-ZONE">
+			<h1>WELCOME</h1>
+			<img src="circle.png">
+			<h2>ENTER</h2>
+			<a href="candylab.html" >CANDYLAB</a>
+			<h4>Sweet Everyday</h4>
+			<h5>Make Your Day Sweet</h5>
+		</div>
+
+
+
+ 		<div style="position:absolute; width: 1500px;
+		height:843px; margin:-30px; margin-top: -760px;">
+ 			<img id="candylab" src="candylab1.png" width="1500px" height="843px" 
+ 			onMouseOver="this.src='candylab1.png';" onMouseOut="this.src='candylab1.gif'"/>
+ 		</div>
+
+
+		<!-- 	<img src="candylab.gif"> -->
+
+
+			<!-- <img border="0" src="candylab1.png" οnmοuseοver="this.src='candylab.gif '"> -->
+			<!-- οnmοuseοut="this.src='candylab.png'" -->
+<!-- 		</div> -->
+
+		<div class="STICKERS">
+			<img src="sticker.png" >
+		</div>
+		<div class="STICKERS1">
+			<img src="sticker1.png">
+		</div>
+	    <div class="sticker3">
+	    	<img src="sticker3.png">
+	    <div class="sticker4">
+	    	<img src="sticker4.png">
+	    <div class="sticker5">
+	    	<img src="sticker5.png">
+	    <div class="sticker6">
+	    	<img src="sticker6.png">
+	    <div class="sticker7">
+	    	<img src="sticker7.png">
+
+	    </div>
+
+		<div class="bottom">
+		<div class="bottom-ln">
+			<a class="bottom-seg header-seg-PICK">PICK</a>
+			<a class="bottom-seg header-seg-ONE" >ONE</a>
+			<a class="bottom-seg header-seg-SURPRISE" >SURPRISE</a>
+			<a class="bottom-seg header-seg-INSIDE" >INSIDE</a>
+			<a class="bottom-seg header-seg-PICK">PICK</a>
+			<a class="bottom-seg header-seg-ONE" >ONE</a>
+			<a class="bottom-seg header-seg-SURPRISE" >SURPRISE</a>
+			<a class="bottom-seg header-seg-INSIDE" >INSIDE</a>
+			<a class="bottom-seg header-seg-PICK">PICK</a>
+			<a class="bottom-seg header-seg-ONE" >ONE</a>
+			<a class="bottom-seg header-seg-SURPRISE" >SURPRISE</a>
+			<a class="bottom-seg header-seg-INSIDE" >INSIDE</a>
+			<a class="bottom-seg header-seg-PICK">PICK</a>
+			<a class="bottom-seg header-seg-ONE" >ONE</a>
+			<a class="bottom-seg header-seg-SURPRISE" >SURPRISE</a>
+			<a class="bottom-seg header-seg-INSIDE" >INSIDE</a>
+			
+		</div>
+
+<!-- <canvas id="myCanvas" width="200" height="100" style="border:1px solid #c3c3c3;">
+	<script src="script.js">
+		</script>
+</canvas>
+-->	
+<!--  	<img src="Project-2-2(1).jpg">> -->
+
+<audio controls="controls" autoplay="autoplay" loop="loop" autostart="True" position="top" >
+	<source src="bgmusic.ogg" type="audio/ogg">
+		<source src="music.mp3" type="audio/mpeg">
+			<embed height="200" width="200" src="music.mp3" />
+		</audio>
+
+
+	</body>
+	</html>
